@@ -1,0 +1,21 @@
+# mac
+.DS_Store
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Generated files
+captures/
+
+# Keystore
+*.jks
+
+# Misc
+*.tmp

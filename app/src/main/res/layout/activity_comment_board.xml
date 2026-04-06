@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search tags (comma separated)"/>
+
+    <CheckBox
+        android:id="@+id/includeSketches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Include Sketches"
+        android:checked="true"/>
+
+    <Button
+        android:id="@+id/btnFindMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Find"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/selectedMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="You selected: (none)"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/mediaList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="8dp"/>
+
+    <Button
+        android:id="@+id/btnGenerateComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Generate Comments"/>
+
+    <ListView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

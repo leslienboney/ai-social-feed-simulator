@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <com.example.a433assn4.SketchView
+        android:id="@+id/sketchView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#EEEEEE"/>
+
+    <Button
+        android:id="@+id/btnBackSketch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+
+    <Button
+        android:id="@+id/btnClearSketch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Clear Sketch"/>
+
+    <EditText
+        android:id="@+id/editSketchTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Tags (comma separated)"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnSaveSketch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/btnFindSketch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Find"/>
+
+    </LinearLayout>
+
+</LinearLayout>
